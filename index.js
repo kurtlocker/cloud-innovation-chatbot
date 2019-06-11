@@ -68,7 +68,7 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
 server.post('/api/messages', (req, res) => {
     // Route received a request to adapter for processing
 
-    adapter.authenticateRequest = await function(){
+    adapter.authenticateRequest = async function(){
 
     };
 
