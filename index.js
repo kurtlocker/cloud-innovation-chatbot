@@ -132,20 +132,18 @@ server.post('/api/messages', (req, res) => {
             const context = this.createContext(request);
             await this.runMiddleware(context, logic);
             // Retrieve cached invoke response.
-            if (request.type === botbuilder_core_1.ActivityTypes.Invoke) {
-                const invokeResponse = context.turnState.get(INVOKE_RESPONSE_KEY);
-                if (invokeResponse && invokeResponse.value) {
-                    const value = invokeResponse.value;
-                    status = value.status;
-                    body = value.body;
-                }
-                else {
-                    status = 501;
-                }
-            }
-            else {
-                status = 200;
-            }
+            // if (request.type === botbuilder_core_1.ActivityTypes.Invoke) {
+            //     const invokeResponse = context.turnState.get(INVOKE_RESPONSE_KEY);
+            //     if (invokeResponse && invokeResponse.value) {
+            //         const value = invokeResponse.value;
+            //         status = value.status;
+            //         body = value.body;
+            //     }
+            //     else {
+            //         status = 501;
+            //     }
+            // }
+            status = 200;
         }
         catch (err) {
             body = err.toString();
