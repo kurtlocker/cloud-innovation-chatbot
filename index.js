@@ -64,9 +64,58 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
     console.log(`\nGet Bot Framework Emulator: https://aka.ms/botframework-emulator`);
 });
 
+
+
 // Listen for incoming activities and route them to your bot main dialog.
 server.post('/api/messages', (req, res) => {
     // Route received a request to adapter for processing
+
+    adapter.processActivity = async function(req, res, logic) {
+        let body;
+        let status;
+        try {
+            // Parse body of request
+            status = 400;
+            const request = await parseRequest(req);
+            // Authenticate the incoming request
+            status = 401;
+            const authHeader = req.headers.authorization || req.headers.Authorization || '';
+            //await this.authenticateRequest(request, authHeader);
+            // Process received activity
+            status = 500;
+            const context = this.createContext(request);
+            await this.runMiddleware(context, logic);
+            // Retrieve cached invoke response.
+            if (request.type === botbuilder_core_1.ActivityTypes.Invoke) {
+                const invokeResponse = context.turnState.get(INVOKE_RESPONSE_KEY);
+                if (invokeResponse && invokeResponse.value) {
+                    const value = invokeResponse.value;
+                    status = value.status;
+                    body = value.body;
+                }
+                else {
+                    status = 501;
+                }
+            }
+            else {
+                status = 200;
+            }
+        }
+        catch (err) {
+            body = err.toString();
+        }
+        // Return status 
+        res.status(status);
+        if (body) {
+            res.send(body);
+        }
+        res.end();
+        // Check for an error
+        if (status >= 400) {
+            console.warn(`BotFrameworkAdapter.processActivity(): ${status} ERROR - ${body.toString()}`);
+            throw new Error(body.toString());
+        }
+    }
 
     adapter.authenticateRequest = async function(){
 
