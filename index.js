@@ -70,6 +70,52 @@ server.listen(process.env.port || process.env.PORT || 3978, function() {
 server.post('/api/messages', (req, res) => {
     // Route received a request to adapter for processing
 
+    function parseRequest(req) {
+        return new Promise((resolve, reject) => {
+            function returnActivity(activity) {
+                if (typeof activity !== 'object') {
+                    throw new Error(`BotFrameworkAdapter.parseRequest(): invalid request body.`);
+                }
+                if (typeof activity.type !== 'string') {
+                    throw new Error(`BotFrameworkAdapter.parseRequest(): missing activity type.`);
+                }
+                if (typeof activity.timestamp === 'string') {
+                    activity.timestamp = new Date(activity.timestamp);
+                }
+                if (typeof activity.localTimestamp === 'string') {
+                    activity.localTimestamp = new Date(activity.localTimestamp);
+                }
+                if (typeof activity.expiration === 'string') {
+                    activity.expiration = new Date(activity.expiration);
+                }
+                resolve(activity);
+            }
+            if (req.body) {
+                try {
+                    returnActivity(req.body);
+                }
+                catch (err) {
+                    reject(err);
+                }
+            }
+            else {
+                let requestData = '';
+                req.on('data', (chunk) => {
+                    requestData += chunk;
+                });
+                req.on('end', () => {
+                    try {
+                        req.body = JSON.parse(requestData);
+                        returnActivity(req.body);
+                    }
+                    catch (err) {
+                        reject(err);
+                    }
+                });
+            }
+        });
+    }
+
     adapter.processActivity = async function(req, res, logic) {
         let body;
         let status;
