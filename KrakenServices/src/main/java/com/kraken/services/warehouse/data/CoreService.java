@@ -1,5 +1,8 @@
 package com.kraken.services.warehouse.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CoreService {
     private String name;
     private String localizedName;

@@ -1,0 +1,15 @@
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/scrape/WarehouseScraper.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/persistence/mongo/repository/DeliMenusRepository.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/persistence/mongo/MongoReader.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/office/data/Office.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/persistence/mongo/repository/OfficesRepository.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/persistence/mongo/MongoWriter.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/data/CoreService.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/data/Warehouse.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/util/WarehouseUtil.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/persistence/mongo/repository/WarehouseRepository.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/Application.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/data/Hour.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/data/UpcomingHoliday.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/deli/data/Menu.java
+/Users/rteckard/Documents/cloud-innovation-chatbot/KrakenServices/src/main/java/com/kraken/services/warehouse/WarehouseController.java
