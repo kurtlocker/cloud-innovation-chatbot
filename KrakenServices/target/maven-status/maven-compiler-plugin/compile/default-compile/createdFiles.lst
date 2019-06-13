@@ -1,12 +1,9 @@
 com/kraken/services/office/data/Office.class
-com/kraken/persistence/mongo/MongoReader.class
 com/kraken/services/warehouse/data/Hour.class
 com/kraken/services/warehouse/data/CoreService.class
-com/kraken/persistence/mongo/MongoWriter.class
 com/kraken/services/warehouse/data/Warehouse.class
 com/kraken/services/Application.class
 com/kraken/services/warehouse/scrape/WarehouseScraper.class
-com/kraken/services/warehouse/util/WarehouseUtil.class
 com/kraken/services/warehouse/WarehouseController.class
 com/kraken/services/warehouse/data/UpcomingHoliday.class
 com/kraken/persistence/mongo/repository/OfficesRepository.class
