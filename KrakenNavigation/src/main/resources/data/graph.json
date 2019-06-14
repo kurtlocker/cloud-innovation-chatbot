@@ -1,0 +1,176 @@
+{
+	"defaultStart":{"x": 750,"y": 350},
+	"location": [
+		{
+			"locationName": "6601",
+			"coordinates": {"x": 810,"y": 520}
+		},
+		{
+			"locationName": "6602",
+			"coordinates": {"x": 715,"y": 503}
+		},
+		{
+			"locationName": "6603",
+			"coordinates": {"x": 595,"y": 410}
+		},
+		{
+			"locationName": "6604",
+			"coordinates": {"x": 490,"y": 410}
+		},
+		{
+			"locationName": "6605",
+			"coordinates": {"x": 385,"y": 410}
+		},
+		{
+			"locationName": "6606",
+			"coordinates": {"x": 250,"y": 450}
+		},
+		{
+			"locationName": "6607",
+			"coordinates": {"x": 250,"y": 370}
+		},
+		{
+			"locationName": "6608",
+			"coordinates": {"x": 250,"y": 345}
+		},
+		{
+			"locationName": "6609",
+			"coordinates": {"x": 250,"y": 250}
+		},
+		{
+			"locationName": "6610",
+			"coordinates": {"x": 325,"y": 295}
+		},
+		{
+			"locationName": "6611",
+			"coordinates": {"x": 355,"y": 205}
+		},
+		{
+			"locationName": "6612",
+			"coordinates": {"x": 525,"y": 205}
+		},
+		{
+			"locationName": "6613",
+			"coordinates": {"x": 580,"y": 205}
+		},
+		{
+			"locationName": "6614",
+			"coordinates": {"x": 600,"y": 305}
+		},
+		{
+			"locationName": "6615",
+			"coordinates": {"x": 665,"y": 205}
+		},
+		{
+			"locationName": "6616",
+			"coordinates": {"x": 685,"y": 205}
+		},
+		{
+			"locationName": "6617",
+			"coordinates": {"x": 810,"y": 205}
+		},
+		{
+			"locationName": "6618",
+			"coordinates": {"x": 845,"y": 205}
+		}
+	],
+	"path": [
+		{
+			"name": "6601_ent",
+			"coordinates": [{"x": 810,"y": 520},{"x": 865,"y": 520}, {"x": 865,"y": 465}]
+		},
+		{
+			"name": "6602_ent",
+			"coordinates": [{"x": 715,"y": 503},{"x": 655,"y": 503},{"x": 655,"y": 465}]
+		},
+		{
+			"name": "6603_ent",
+			"coordinates": [{"x": 595,"y": 410},{"x": 595,"y": 465}]
+		},
+		{
+			"name": "6604_ent",
+			"coordinates": [{"x": 490,"y": 410},{"x": 490,"y": 465}]
+		},
+		{
+			"name": "6605_ent",
+			"coordinates": [{"x": 385,"y": 410},{"x": 385,"y": 465}]
+		},
+		{
+			"name": "6606_ent",
+			"coordinates": [{"x": 250,"y": 450},{"x": 185,"y": 450}]
+		},
+		{
+			"name": "6607_ent",
+			"coordinates": [{"x": 250,"y": 370},{"x": 185,"y": 370}]
+		},
+		{
+			"name": "6608_ent",
+			"coordinates": [{"x": 250,"y": 345},{"x": 185,"y": 345}]
+		},
+		{
+			"name": "6609_ent",
+			"coordinates": [{"x": 250,"y": 250},{"x": 185,"y": 250}]
+		},
+		{
+			"name": "6610_ent",
+			"coordinates": [{"x": 325,"y": 295},{"x": 325,"y": 220},{"x": 335,"y": 205}, {"x": 335,"y": 145}]
+		},
+		{
+			"name": "6611_ent",
+			"coordinates": [{"x": 355,"y": 205},{"x": 355,"y": 145}]
+		},
+		{
+			"name": "6612_ent",
+			"coordinates": [{"x": 525,"y": 205},{"x": 525,"y": 145}]
+		},
+		{
+			"name": "6613_ent",
+			"coordinates": [{"x": 580,"y": 205},{"x": 580,"y": 145}]
+		},
+		{
+			"name": "6614_ent",
+			"coordinates": [{"x": 600,"y": 305},{"x": 550,"y": 305},{"x": 550,"y": 145}]
+		},
+		{
+			"name": "6615_ent",
+			"coordinates": [{"x": 665,"y": 205},{"x": 665,"y": 145}] 
+		},
+		{
+			"name": "6616_ent",
+			"coordinates": [{"x": 685,"y": 205},{"x": 685,"y": 145}]
+		},
+		{
+			"name": "6617_ent",
+			"coordinates": [{"x": 810,"y": 205},{"x": 810,"y": 145}]
+		},
+		{
+			"name": "6618_ent",
+			"coordinates": [{"x": 845,"y": 205},{"x": 845,"y": 145}]
+		},
+		{
+			"name":"Top_Horizontal_Hall",
+			"coordinates": [{"x": 845,"y": 145},{"x": 810,"y": 145},{"x": 750,"y": 145},{"x": 685,"y": 145},{"x": 656,"y": 145},{"x": 665,"y": 145},{"x": 580,"y": 145},{"x": 550,"y": 145},{"x": 525,"y": 145},{"x": 458,"y": 145},{"x": 355,"y": 145},{"x": 335,"y": 145}]
+		},
+		{
+			"name":"Top_Horizontal_Short",
+			"coordinates": [{"x": 325,"y": 220},{"x": 185,"y": 220}]
+		},
+		{
+			"name":"Left_Vertical_Hall",
+			"coordinates": [{"x": 185,"y": 220},{"x": 185,"y": 250},{"x": 185,"y": 345},{"x": 185,"y": 370},{"x": 185,"y": 450},{"x": 185,"y": 475}]
+		},
+		{
+			"name":"Bottom_Horizontal_Hall",
+			"coordinates": [{"x": 185,"y": 475},{"x": 297,"y": 475},{"x": 385,"y": 465},{"x": 435,"y": 465},{"x": 490,"y": 465},{"x": 595,"y": 465},{"x": 655,"y": 465},{"x": 750,"y": 465},{"x": 865,"y": 465}]
+		},
+		{
+			"name":"Copy_Area_Vertical_Hall",
+			"coordinates": [{"x": 435,"y": 465},{"x": 435,"y": 337},{"x": 458,"y": 337},{"x": 458,"y": 145}]
+		},
+		{
+			"name":"Elevator_Vertical_Hall",
+			"coordinates": [{"x": 750,"y": 465},{"x": 750,"y": 350},{"x": 750,"y": 145}]
+		}
+		
+	]
+}
